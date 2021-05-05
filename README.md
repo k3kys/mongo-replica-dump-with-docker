@@ -12,6 +12,15 @@
 따라서, 이번 프로젝트에서는 Atlas를 이용하지 않고도 DB의 가용성을 높여보고자 합니다.
 
 ## MONGO REPLICASET with Docker
+![image](https://user-images.githubusercontent.com/56282663/117100263-447eaf80-adae-11eb-9ef3-8ddf3d44e26b.png)
+
+만약, 사용자들이 담긴 DB가 사용이 중지 된다면 어떤 일이 발생할까요?
+
+서비스 자체가 무너질 수 있습니다.
+
+따라서 3개의 DB를 만들고, 사용자의 정보를 동시에 3개의 DB에 저장합니다.
+
+메인 DB가 무너져도, 2번 3번 DB가 살아있다면 서비스는 계속해서 유지될 수 있습니다.
 
 ### 준비사항
 - NODE JS와 DOCKER가 깔려있어야 합니다.
@@ -58,6 +67,11 @@ js파일 내의 설정들을 setup.sh의 쉘 스크립트를 통해 실행시키
 이제 docker-compose를 통해 3 개의 mongo-rs 컨테이너와 setup-rs 컨테이너를 실행해봅시다.
 
 ## MONGO DUMP with Docker
+만약, 사용자들의 DB가 소실되는 사고가 발생하면 어떡할까요?
+
+그동안의 서비스 내역이 모두 사라지는 참사가 발생할 수 있습니다.
+
+하지만 백업을 마련해둔다면 그러한 사고에 대비할 수 있습니다.
 
 ### 단계
 - 자동 백업을 위해 backup.sh를 작성합니다.
