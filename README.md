@@ -51,7 +51,7 @@ rs.conf() 또는 rs.status()를 통해 확인할 수 있습니다.
 js파일 내의 설정들을 setup.sh의 쉘 스크립트를 통해 실행시키도록 합니다.
 
 ### 3.3개의 mongo-rs 컨테이너와 setup-rs 컨테이너를 실행하는 Docker compose 작성
-*[docker-compose.sh](../docker-compose.yaml)*
+*[docker-compose.sh](./docker-compose.yaml)*
 
 지금까지 레플리카셋을 하기 위해 많은 단계를 거쳐왔습니다.
 
