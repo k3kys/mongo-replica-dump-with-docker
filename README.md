@@ -25,6 +25,6 @@
 
 ### 1.mongo replication 옵션을 설정한 mongo.conf를 이용해 Dockerfile 작성하기
 
-[mongo.conf로 이동하기](../mongo-rs0-1/mongo.conf)
+[mongo.conf로 이동하기](./mongo-rs0-1/mongo.conf)
 
 ## MONGO DUMP with Docker
