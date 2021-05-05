@@ -1,3 +1,5 @@
+참고: https://youtu.be/mlw7vWISaF4
+
 # MONGODB REPLICASET & DUMP 구현해보기 with Docker
 우리는 흔히 DB를 사용하지만, DB의 가용성에는 크게 신경쓰지 않고 있습니다.
 
