@@ -94,4 +94,5 @@ mongodump 명령어를 통해 원하는 위치에 gzip형태로 저장합니다.
 docker exec mongo sh -c 'mongodump --archive --gzip -v' > backup-`date +%F_%R`.tar.gz
 
 2.복구 명령어
+
 docker exec -i mongo sh -c 'mongorestore --archive --gzip -v' < backup.tar.gz
